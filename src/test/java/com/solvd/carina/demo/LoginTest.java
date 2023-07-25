@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
 
-public class FacebookTest implements IAbstractTest {
-    static Logger logger=Logger.getLogger(FacebookTest.class.getName());
+public class LoginTest implements IAbstractTest {
+    static Logger logger=Logger.getLogger(LoginTest.class.getName());
     @Test
     public void invalidLoginTest(){
         HomePageFacebookBase homePage = initPage(getDriver(), HomePageFacebookBase.class);
