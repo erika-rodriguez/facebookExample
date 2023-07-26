@@ -14,5 +14,5 @@ public abstract class NewRegisterPageBase extends AbstractPage {
     public abstract void selectDOB();
     public abstract void selectGender();
     public abstract void submitNewRegister();
-    public abstract void isInvalidRegister();
+    public abstract boolean isInvalidRegister();
 }

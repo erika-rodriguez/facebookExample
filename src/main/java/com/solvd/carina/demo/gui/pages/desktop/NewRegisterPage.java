@@ -27,8 +27,8 @@ public class NewRegisterPage extends NewRegisterPageBase {
     private ExtendedWebElement selectGender;
     @FindBy(xpath = "//button[@name='websubmit']")
     private ExtendedWebElement registerBtn;
-    @FindBy(xpath = "//input[@name='firstname']")
-    private ExtendedWebElement invalidMessage;
+    @FindBy(xpath = "//div[@id='js_pl']")
+    private ExtendedWebElement invalidEmailMessage;
 
     public NewRegisterPage(WebDriver driver) {
         super(driver);
@@ -60,8 +60,8 @@ public class NewRegisterPage extends NewRegisterPageBase {
     }
 
     @Override
-    public void isInvalidRegister() {
-
+    public boolean isInvalidRegister() {
+        return invalidEmailMessage.isElementPresent();
     }
 
 
